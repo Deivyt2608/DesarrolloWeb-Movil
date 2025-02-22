@@ -1,0 +1,74 @@
+.basico{
+    width: 300px;  
+    background: linear-gradient(to bottom left,gray, rgb(132, 10, 10), gray); 
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.fPerfil{
+    width: 300px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nombre{
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 5px 2px 2px rgb(103, 96, 96);
+}
+
+.titulo{
+    font-size: 18px;
+    color: #2b2626;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.descripcion{
+    font-size: 14px;
+    color: #252020;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    margin: 0 15px;
+}
+a{
+    text-decoration: none;
+}
+.linkedin{
+    color: #0077b5;
+}
+.twiter{
+    color: #1DA1f2;
+}
+.github{
+    color: #333;
+}
+i:hover{
+    color: rgb(126, 11, 161);
+}
+
+.boton{
+    font-size: 20px;
+    width: 150px;
+    background: linear-gradient(to right, rgb(134, 18, 18), gray);
+}
+.boton:hover{
+    background: linear-gradient(to left, rgb(134, 18, 18), gray);
+}
+
