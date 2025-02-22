@@ -1,0 +1,74 @@
+.basico{
+    width: 300px;  
+    background: linear-gradient(to bottom left,rgb(185, 173, 173),rgba(161, 7, 7, 0.788),rgb(161, 154, 154)); 
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.fPerfil{
+    width: 300px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 2px solid rgb(71, 61, 61);
+}
+
+.nombre{
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 2px rgb(226, 219, 219);
+}
+
+.titulo{
+    font-size: 18px;
+    color: #2c2525;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.descripcion{
+    font-size: 14px;
+    color: #3a2b2b;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    margin: 0 15px;
+}
+a{
+    text-decoration: none;
+}
+.linkedin{
+    color: #0077b5;
+}
+.twiter{
+    color: #1DA1f2;
+}
+.github{
+    color: #333;
+}
+i:hover{
+    color: rgb(119, 17, 17);
+}
+
+.boton1{
+    font-size: 20px;
+    background-color: #00000000;
+    
+    button:hover{
+        color: rgb(119, 17, 17) ;
+    }
+}
