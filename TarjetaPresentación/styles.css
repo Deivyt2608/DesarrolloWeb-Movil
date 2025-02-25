@@ -1,22 +1,42 @@
+body{
+    background: linear-gradient(to right,rgb(110, 109, 109),rgba(153, 88, 167, 0.719));
+    display: flex;
+    align-items: center;
+    height: 96vh;
+
+    opacity: 0;/*Se encarga del efecto de transicion*/
+    transition: opacity 2s ease-in-out;
+}
+.fade-in { /*Se encarga del efecto de transicion*/
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+body.loaded {/*Se encarga del efecto de transicion*/
+    opacity: 1;
+}
+
 .basico{
-    width: 300px;  
-    background: linear-gradient(to bottom left,gray, rgb(132, 10, 10), gray); 
+    width: 500px;  
+    background: linear-gradient(to bottom left,gray, rgb(214, 211, 211), gray); 
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     padding: 20px;
     text-align: center;
+    border-radius: 8%;
 }
 
 .fPerfil{
     width: 300px;
-    border-radius: 50%;
+    border-radius: 100%;
     text-align: center;
     margin-bottom: 15px;
+    border: 3px solid rgb(87, 83, 83);
 }
 
 .nombre{
-    font-size: 24px;
+    font-size: 28px;
     color: #000000;
     text-align: center;
     margin-bottom: 10px;
@@ -24,24 +44,25 @@
 }
 
 .titulo{
-    font-size: 18px;
-    color: #2b2626;
+    font-size: 22px;
+    color: #1f1d1d;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .descripcion{
-    font-size: 14px;
-    color: #252020;
+    font-size: 18px;
+    color: #1f1d1d;
     text-align: justify;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 ul{
     list-style: none;
     padding: 0;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
+    margin: 5%;
 }
 li{
     display: inline-block;
@@ -59,16 +80,21 @@ a{
 .github{
     color: #333;
 }
+
+i{
+    transition: transform 0.3s ease-in-out;  /* Transición para que el crecimiento sea suave */
+}
 i:hover{
-    color: rgb(126, 11, 161);
+    color: rgb(153, 88, 167, 0.719);
+    transform: scale(1.25);  /* Los iconos crecerán 1.5 veces su tamaño al pasar el mouse */
 }
 
 .boton{
     font-size: 20px;
     width: 150px;
-    background: linear-gradient(to right, rgb(134, 18, 18), gray);
+    background: linear-gradient(to right, rgb(95, 92, 92), gray);
 }
 .boton:hover{
-    background: linear-gradient(to left, rgb(134, 18, 18), gray);
+    background: linear-gradient(to left, rgb(153, 88, 167, 0.719), gray);
 }
 
