@@ -91,7 +91,7 @@ i:hover{
 
 .boton{
     font-size: 20px;
-    width: 150px;
+    width: 200px;
     background: linear-gradient(to right, rgb(95, 92, 92), gray);
 }
 .boton:hover{
