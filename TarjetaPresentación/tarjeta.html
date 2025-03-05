@@ -7,6 +7,8 @@
         <title>Tarjeta de presentación</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="java.js"></script>
     </head>
     <body>
         <div class="basico">
@@ -20,9 +22,18 @@
                 <li><a href="https://x.com/272Deivyt" class="twiter"><i class="fa-brands fa-x-twitter"></i></a></li>
                 <li><a href="https://github.com/Deivyt2608" class="github"><i class="fa-brands fa-github"></i></a></li>
             </ul>
-            <button class="boton" onclick="funClick1(alert('¡Mensaje cambiado en descripción!'))">Click para conocer mas de mi</button>
+            <div>
+                <button class="boton1" onclick="funClick1(alert('¡Mensaje cambiado en descripción!'))">Click para conocer mas de mi</button>
+                <button class="boton1" id="estilo">Cambiar estilo de pagina</button>
+            </div>
             
-            <script src="java.js"></script>
+            <script>
+                $("#estilo").click(function(){
+                    $("body").toggleClass("dark-mode");
+                    $(".basico").toggleClass("dark-mode")
+                });
+            </script>
+            
         </div>
     </body>
 </html>

@@ -10,3 +10,4 @@ function funClick1(){
         document.getElementById("parr1").innerText = "Septimo semestre universidad EAN";
     }
 };
+

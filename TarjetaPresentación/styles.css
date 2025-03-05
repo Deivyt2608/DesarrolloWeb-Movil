@@ -87,14 +87,29 @@ i{
 i:hover{
     color: rgb(153, 88, 167, 0.719);
     transform: scale(1.25);  /* Los iconos crecerán 1.5 veces su tamaño al pasar el mouse */
-}
+}as
 
-.boton{
+.boton1{
     font-size: 20px;
     width: 200px;
     background: linear-gradient(to right, rgb(95, 92, 92), gray);
 }
-.boton:hover{
+.boton1:hover{
     background: linear-gradient(to left, rgb(153, 88, 167, 0.719), gray);
 }
 
+body.dark-mode{
+    background: linear-gradient(to right,rgb(66, 65, 65),rgba(58, 12, 68, 0.719));
+}
+
+.basico.dark-mode{
+    width: 500px;  
+    background: linear-gradient(to bottom left,gray, rgb(29, 28, 28), gray); 
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8%;
+    color: antiquewhite;
+}
