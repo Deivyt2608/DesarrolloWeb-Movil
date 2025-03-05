@@ -87,7 +87,7 @@ i{
 i:hover{
     color: rgb(153, 88, 167, 0.719);
     transform: scale(1.25);  /* Los iconos crecerán 1.5 veces su tamaño al pasar el mouse */
-}as
+}
 
 .boton1{
     font-size: 20px;
