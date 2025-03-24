@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -16,17 +17,39 @@ body{
         margin-bottom: 5px;
         width: 100%;
         text-align: center;
+        display:flex;
+        align-items: center;
+        padding: 0%;
         background: linear-gradient(rgb(71, 22, 22), rgb(153, 16, 16), rgb(71, 22, 22)) ;
         .logo{
             width: 3.5vw;
-            display: inline;
-            margin: auto;
+            padding: 0px;
         }
         h1{
-            display: inline;
             font-size: 4vw;
-            margin: auto;
+            padding: 0px;
+            margin-bottom: 0px;
+            margin-top: 0%;
+            margin-right: 60%;
         }
+        a button {
+            background-color: rgb(153, 16, 16); 
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            box-shadow: 0 0 5px #0f0611;
+        }
+        a button:hover {
+            background-color:rgb(118, 8, 8); 
+            color: black;
+        }
+    
+    
     }
     .banner{
         width: 100%;
@@ -109,6 +132,7 @@ body{
         cursor: pointer;
         text-align: center;
         transition: background-color 0.3s ease;
+        margin: auto;
     }
     
     form button:hover {
@@ -122,5 +146,81 @@ body{
         text-align: center;
         padding: 15px 0;
     }
+
+    .titulo2{
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    table {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: #ffffff;  
+        text-align: center;   
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #680b75;
+        border: 1px solid black;
+    }
     
+    th {
+        background: linear-gradient(rgb(71, 22, 22), rgb(153, 16, 16), rgb(71, 22, 22));
+        color: rgb(255, 255, 255);
+        padding: 12px;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 1px solid black;
+    }
+    
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #d293fe;
+        border: 1px solid black;
+    }
+    
+    tr:hover {
+        background-color:rgb(211, 125, 125); 
+        transition: 0.3s ease-in-out;
+    }
+
+    .btn{
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(153, 16, 16);
+        text-decoration: none;
+        padding: 8px;
+        color: #222;
+        
+    }
+    .tabla{
+        text-align: center;
+        background: linear-gradient(to bottom right, rgb(87, 85, 85),rgb(71, 22, 22), rgb(87, 85, 85));
+        padding:20px;
+    }
+
+    .product{
+        box-shadow: 2px 4px 8px black;
+    }
+
+    a i{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        color: #0f0611;
+    }
+}
+
+.bodyProduc{
+    background-color: #222;
+    h2{
+        color: white;
+    }
 }

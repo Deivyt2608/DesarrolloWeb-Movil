@@ -21,7 +21,7 @@ $telefono = mysqli_real_escape_string($conn, $telefono);
 $sql = "INSERT INTO clientes (nombre, email, telefono) VALUES ('$nombre', '$email', '$telefono')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "<script>alert('Registro exitoso. ¡Gracias por unirte!'); window.location.href='index.html';</script>";
+    echo "<script>alert('Registro exitoso. ¡Gracias por unirte!'); window.location.href='index.php';</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

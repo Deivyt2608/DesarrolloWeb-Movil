@@ -1,10 +1,18 @@
+<?php
+include 'conexion.php';
+
+// Obtener productos
+$sql = "SELECT * FROM productos";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viwport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <script defer src="java.js"></script>
     </head>
@@ -13,10 +21,11 @@
         <header>
             <img src="imagenes/logo.png" class="logo">
             <h1>GameTech</h1>
+            <a href="productos.php"><button>Ver productos</button></a>
         </header>
 
         <img src="imagenes/banner.png" class="banner">
-
+        
         <section id="productos" class="productos fade-in">
             <h2>Productos Destacados</h2>
             <div class="productos-grid">
