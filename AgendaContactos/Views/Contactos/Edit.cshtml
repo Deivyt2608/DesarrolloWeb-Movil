@@ -1,0 +1,32 @@
+@model AgendaContactos.Models.Contacto
+
+<h2>Editar Contacto</h2>
+
+<form asp-action="Edit" method="post">
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre"></span>
+    </div>
+
+    <div>
+        <label asp-for="Correo"></label>
+        <input asp-for="Correo" />
+        <span asp-validation-for="Correo"></span>
+    </div>
+
+    <div>
+        <label asp-for="Telefono"></label>
+        <input asp-for="Telefono" />
+        <span asp-validation-for="Telefono"></span>
+    </div>
+
+    <div>
+        <label asp-for="Descripcion"></label>
+        <textarea asp-for="Descripcion"></textarea>
+    </div>
+
+    <button type="submit">Guardar Cambios</button>
+</form>
+
+<a href="@Url.Action("Index", "Contactos")">Volver a la lista</a>

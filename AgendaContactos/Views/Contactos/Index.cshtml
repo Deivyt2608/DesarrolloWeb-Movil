@@ -1,0 +1,29 @@
+@model List<AgendaContactos.Models.Contacto>
+
+<h2>Contactos</h2>
+<a class="btn btn-primary" href="/Contactos/Create">Agregar Contacto</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Nombre</td>
+                <td>@c.Correo</td>
+                <td>@c.Telefono</td>
+                <td>
+                    <a href="/Contactos/Edit/@c.Id">Editar</a> |
+                    <a href="/Contactos/Delete/@c.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
